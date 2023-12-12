@@ -46,8 +46,8 @@ def show_plot(gdf):
     gdf.plot(ax=ax, facecolor='none', edgecolor='red')
 
     # Customize the plot as needed
-    ax.set_xlabel('X Label')
-    ax.set_ylabel('Y Label')
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
     ax.set_title('Triangle Visualization')
 
     plt.show()
@@ -66,8 +66,12 @@ if __name__ == "__main__":
     gdf.plot(ax=ax, facecolor='none', edgecolor='red', marker='o', markersize=5)
 
     # Customize the plot as needed
-    ax.set_xlabel('X Label')
-    ax.set_ylabel('Y Label')
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
     ax.set_title('2D Terrain Model Visualization')
+
+    # Set the x and y-axis limits to zoom in
+    #ax.set_xlim(xmin=-727500, xmax=-725000)
+    #ax.set_ylim(ymin=1e6 * - 1.06800, ymax=1e6 * - 1.06600)
 
     plt.show()
